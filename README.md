@@ -14,13 +14,13 @@ offline logging there are other solutions.
 ### How it works
 
 Brahma will create directory if it doesn't exist already and will fill it up
-with csv files as it goes, it will write them to a new line, but will lazily
-create new csv file every ten minutes (only if it needs to write something).
+with `csv` files as it goes, it will write them to a new line, but will lazily
+create new `csv` file every hour (only if it needs to write something).
 To avoid keeping file stream opened for a long time. CSV format is fixed to
 following columns:
 
- * Datetime in ISO-8601, for entities who can't read EPOCH.
- * EPOCH so we have useful datetime format.
+ * Date-time in ISO-8601, for entities who can't read EPOCH.
+ * EPOCH so we have useful date-time format.
  * Category: Enough said.
  * Action: Enough said.
  * Tags: If category and action is not to describe.
