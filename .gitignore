@@ -1,0 +1,8 @@
+metrics
+node_modules
+lib
+
+npm-debug.log
+test-results.xml
+
+.DS_Store
