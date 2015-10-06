@@ -1,26 +1,28 @@
 Brahma. Minimal and extremely opinionated offline logging and metrics solution.
 ===
+[![Build Status](https://travis-ci.org/nirth/brahma.js.svg?branch=master)](https://travis-ci.org/nirth/brahma.js)
+[![Circle CI](https://circleci.com/gh/nirth/brahma.js.svg?style=svg)](https://circleci.com/gh/nirth/brahma.js)
 
 ### Summary
 While most of the projects we work on are online and can use Internet sometimes
-we encounter interesting offline projects for varous expos, games etc. While
+we encounter interesting offline projects for various expos, games etc. While
 offline these apps still need logging, metrics or analytics and this library
 aims to solve it.
 
 Library designed to be non-configurable, drop-in solution, it suited my clients
-in the past, including Ubisoft, Canon, Nokia and GSK. If you need configurable
-offline logging there are other solutions.
+in the past, so I decided to share it. If you need configurable offline logging
+there are other solutions.
 
 ### How it works
 
 Brahma will create directory if it doesn't exist already and will fill it up
-with csv files as it goes, it will write them to a new line, but will lazily
-create new csv file every ten minutes (only if it needs to write something).
+with `csv` files as it goes, it will write them to a new line, but will lazily
+create new `csv` file every hour (only if it needs to write something).
 To avoid keeping file stream opened for a long time. CSV format is fixed to
 following columns:
 
- * Datetime in ISO-8601, for entities who can't read EPOCH.
- * EPOCH so we have useful datetime format.
+ * Date-time in ISO-8601, for entities who can't read EPOCH.
+ * EPOCH so we have useful date-time format.
  * Category: Enough said.
  * Action: Enough said.
  * Tags: If category and action is not to describe.

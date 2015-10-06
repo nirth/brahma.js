@@ -5,12 +5,12 @@ const writer = (brahma) => (category, action, tags = '', notes = '') => {
 };
 
 export const metrics = (directoryName) => {
-  const b = new Brahma(directoryName, 600000);
+  const b = new Brahma(directoryName, 3600000);
   return writer(b);
 };
 
 export const logging = (directoryName) => {
-  const b = new Brahma(directoryName, 600000);
+  const b = new Brahma(directoryName, 3600000);
   return writer(b);
 };
 
