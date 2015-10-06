@@ -1,0 +1,45 @@
+{
+  "author": "David Sergey Grigoryan <me@davidsergey> (http://davidsergey.com)",
+  "name": "brahma",
+  "version": "1.0.0",
+  "description": "Brahma. Minimal and extremely opinionated offline logging and metrics solution.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nirth/brahma.js.git"
+  },
+  "keywords": [
+    "log",
+    "logging",
+    "analytics",
+    "metrics",
+    "records",
+    "statuses",
+    "opinionated"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "node node_modules/gulp/bin/gulp.js production",
+    "test": "node node_modules/gulp/bin/gulp.js ci"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.1",
+    "chai": "^3.2.0",
+    "chai-as-promised": "^5.1.0",
+    "eslint": "^1.3.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-eslint": "^1.0.0",
+    "gulp-jsdoc": "^0.1.5",
+    "gulp-mocha": "^2.1.3",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.4.0",
+    "minimatch": "^2.0.10",
+    "mocha": "^2.3.0",
+    "mocha-junit-reporter": "^1.6.1"
+  },
+  "dependencies": {
+    "sancus": "^1.0.3"
+  }
+}

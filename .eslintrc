@@ -1,0 +1,40 @@
+{
+  "parser": "babel-eslint",
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+  },
+  "rules": {
+    "eqeqeq": 2,
+    "curly": 2,
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "no-var": 2,
+    "prefer-const": 1,
+    "prefer-arrow-callback": 1,
+    "quotes": [2, "single", "avoid-escape"],
+    "semi": 2
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "worker": true,
+    "mocha": true,
+    "phantomjs": true,
+    "serviceworker": true,
+    "es6": true
+  }
+}
