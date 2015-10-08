@@ -4,7 +4,6 @@ import {metrics, logging, stressTest} from '../src/index';
 describe('Api should', () => {
   it('have meter factory', () => expect(metrics).to.be.a('function'));
   it('have logging factory', () => expect(logging).to.be.a('function'));
-  it('have stress test', () => expect(stressTest).to.be.a('function'));
 });
 
 describe('Metrics factory should', () => {

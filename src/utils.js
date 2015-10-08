@@ -79,7 +79,8 @@ export const openStream = (directoryName) => {
     .then(() => {
       const stream = fs.createWriteStream(fileName);
       stream.once('open', (fileDescriptor) => {
-        writeLine(stream, 'Datetime,Epoch,Location,Section,Category,Action,Item,Tags,Notes');
+        writeLine(stream,
+          'Datetime,Epoch,Session,Category,Subcategory,Action,Item,Tags,Notes');
         s.resolve(stream);
       });
     })
