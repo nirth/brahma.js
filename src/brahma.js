@@ -39,12 +39,15 @@ export default class Brahma {
     return s.promise;
   }
 
-  write(category, action, tags, notes) {
+  write(location, section, category, action, item, tags, notes) {
     const line = [
       ((new Date()).toISOString()),
       (Date.now()),
+      location,
+      section,
       category,
       action,
+      item,
       tags,
       notes.split(',').join('|')
     ].join(',');
