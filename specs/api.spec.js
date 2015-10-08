@@ -13,7 +13,7 @@ describe('Metrics factory should', () => {
   });
 
   it('produce meter function that accepts at least two arguments', () => {
-    expect(metrics('dir').length).to.equal(2);
+    expect(metrics('dir').length).to.equal(7);
   });
 });
 
@@ -23,6 +23,6 @@ describe('Logging factory should', () => {
   });
 
   it('produce log function that accepts at least two arguments', () => {
-    expect(logging('dir').length).to.equal(2);
+    expect(logging('dir').length).to.equal(7);
   });
 });
