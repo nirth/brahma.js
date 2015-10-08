@@ -39,13 +39,13 @@ export default class Brahma {
     return s.promise;
   }
 
-  write(location, section, category, action, item, tags, notes) {
+  write(session, category, subcategory, action, item, tags, notes) {
     const line = [
       ((new Date()).toISOString()),
       (Date.now()),
-      location,
-      section,
+      session,
       category,
+      subcategory,
       action,
       item,
       tags,
