@@ -1,7 +1,8 @@
 import Brahma from './brahma';
 
-const writer = (brahma) => (category, action, tags = '', notes = '') => {
-  brahma.write(category, action, tags, notes);
+const writer = (brahma) => (location, section, category,
+                            action, item, tags, notes) => {
+  brahma.write(location, section, category, action, item, tags, notes);
 };
 
 export const metrics = (directoryName) => {
@@ -17,7 +18,7 @@ export const logging = (directoryName) => {
 export const stressTest = () => {
   const meter = metrics('metrics');
   const test = () => {
-    meter('Some category', 'some action', 'tags tags!', 'notes?');
+    // meter('Some category', 'some action', 'tags tags!', 'notes?');
     setTimeout(test, 1);
   };
   test();
