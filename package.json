@@ -1,7 +1,7 @@
 {
   "author": "David Sergey Grigoryan <me@davidsergey> (http://davidsergey.com)",
   "name": "brahma",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Brahma. Minimal and extremely opinionated offline logging and metrics solution.",
   "repository": {
     "type": "git",
