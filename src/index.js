@@ -18,7 +18,14 @@ export const logging = (directoryName) => {
 export const stressTest = () => {
   const meter = metrics('metrics');
   const test = () => {
-    // meter('Some category', 'some action', 'tags tags!', 'notes?');
+    meter(
+      'Location',
+      'Some Section',
+      'Some category',
+      'Some action',
+      'Item info',
+      'tags tags!',
+      'notes?');
     setTimeout(test, 1);
   };
   test();
